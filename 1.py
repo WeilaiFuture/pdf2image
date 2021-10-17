@@ -37,7 +37,7 @@ def pdf2image1(path, pic_path):
         pix.writePNG(os.path.join(pic_path, new_name))
         count += 1
         pix = None
-if not os.path.exists('config.ini'):
+if not os.path.exists('conf.ini'):
     conf = ConfigParser()
     conf.add_section('path')
     conf.add_section('size')
